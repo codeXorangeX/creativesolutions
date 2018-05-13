@@ -1,0 +1,120 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.header__title {
+		padding-top: 180px;
+	}
+	.about-us {
+		&__text:first-of-type {
+			margin-top: 30px;
+		}
+		&__btn-wrap {
+			margin-top: 50px;
+		}
+	}
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.about-us {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		&__text:first-of-type {
+			margin-top: 0;
+		}
+		&__btn-wrap {
+			margin-top: 20px;
+		}
+	}
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.header {
+		&__title {
+			padding-top: 80px;
+			font-size: 3.5rem;
+		}
+		&__subtitle {
+			font-size: 1.5rem;
+		}
+		& .burger-open {
+			display: block;
+		}
+		&__nav {
+			display: inline-block;
+			height: 100%;
+			position: fixed;
+			background: rgba(0, 0, 0, .7);
+			top: 0;
+			right: 0;
+			margin: 0;
+			padding: 60px 80px 15px 35px;
+			overflow-y: auto;
+			text-align: left;
+			z-index: 100;
+			transform: translate(100%, 0);
+			transition: transform 0.5s;
+		}
+		&__item:nth-of-type(n) {
+			margin: 0;
+			margin-top: 20px;
+			display: block;
+		}
+		&__link {
+			display: inline-block;
+		}
+	}
+	.about-us {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		&__img {
+			display: none;
+		}
+		&__img-wrap::before {
+				content: "";
+				background: transparent;
+		}
+		&__overlay {
+			position: relative;
+			top: 0;
+			&-img-wrap {
+				display: none;
+			}
+			&-title {
+				color: $accent;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.works, .touch {
+		&__title {
+			color: #FEFBFC;
+		}
+	}
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.header {
+		&__title {
+			padding-top: 80px;
+			font-size: 3rem;
+		}
+		&__subtitle {
+			font-size: 1.2rem;
+		}
+		&__logo-icon {
+			width: 43px;
+			height: 62px;
+		}
+	}
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

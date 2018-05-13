@@ -1,0 +1,6 @@
+@import "_mixins/font-face";
+
+@include font-face("proximaNova-bold", "../fonts/proxima_nova_bold/proxima_nova_bold");
+@include font-face("proximaNova-semibold", "../fonts/proxima_nova_semibold/proxima_nova_semibold", bold);
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700');
